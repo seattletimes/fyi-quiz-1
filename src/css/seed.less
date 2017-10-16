@@ -4,9 +4,13 @@
   max-width: 800px;
   margin: auto;
 
+  h2 {
+    margin-bottom: 0;
+  }
+
   .question {
     font-family: @df-sans;
-    padding: 20px 0;
+    padding: 0 0 20px;
   }
 
   .answer-text {
@@ -22,6 +26,11 @@
 .question.ready.answered {
   .answer-text {
     animation: 1s fade-in;
+  }
+
+  &.correctly .answer-text::before {
+    content: "Correct! ";
+    color: @st-dark-green;
   }
 }
 

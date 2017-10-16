@@ -10,6 +10,9 @@ $(".multiple-choice.question").forEach(function(container) {
     chosen = true;
     this.classList.add("chosen");
     container.classList.add("answered");
+    if (this.hasAttribute("data-correct")) {
+      container.classList.add("correctly");
+    }
   };
 
   $(".options li", container).forEach(el => el.addEventListener("click", choose));

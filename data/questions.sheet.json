@@ -11,7 +11,8 @@
     "id": 1,
     "type": "multiple-choice",
     "question": "Pick which slice of the pie represents King County residents who were born in Washington.",
-    "image": "tba.jpg",
+    "image": "quiz-born-pie.jpg",
+    "afterimage": "quiz-born-pie-text.jpg",
     "source": "U.S. Census",
     "blurb": "The number of King County residents who were born in Washington still exceeds the number born in another state -- but it's getting closer and closer. Since the start of the decade, out-of-staters, and folks from foreign countries, have been growing at a much faster rate the native-born Washingtonians. "
   },

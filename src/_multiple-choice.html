@@ -1,7 +1,10 @@
 <div class="multiple-choice question">
   <div class="question-text">
     <% if (typeof image !== "undefined") { %>
-      <img src="./assets/social.jpg">
+      <img src="./assets/<%= image %>" class="before visual">
+    <% } %>
+    <% if (typeof afterimage !== "undefined") { %>
+      <img src="./assets/<%= afterimage %>" class="after visual">
     <% } %>
     <%= question %>
   </div>

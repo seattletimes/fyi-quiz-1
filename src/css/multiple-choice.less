@@ -1,5 +1,25 @@
 .multiple-choice.question {
 
+  .visual {
+    display: block;
+    margin: auto;
+
+    &.before {
+      .answered& {
+        display: none;
+      }
+    }
+
+
+    &.after {
+      display: none;
+
+      .answered& {
+        display: block;
+      }
+    }
+  }
+
   ul.options {
     list-style-type: none;
     .display-flex();
@@ -26,12 +46,20 @@
           }
         }
 
+        .icon {
+          background: @st-light-red;
+        }
+
         &[data-correct] {
           .text {
             background: @st-light-green;
             &::before {
               content: "✔";
             }
+          }
+
+          .icon {
+            background: @st-light-green;
           }
         }
       }
@@ -49,14 +77,14 @@
         width: 100%;
       }
 
-      &:hover, &:focus {
+      :not(.answered)&:hover, &:focus {
         .text, .icon {
           background: @df-light-gray;
         }
       }
     }
   }
-  
+
   .answered& [data-correct] {
     .text, .icon {
       background: @st-light-green;

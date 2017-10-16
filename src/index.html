@@ -27,11 +27,18 @@ json.questions.forEach(function(q) {
   </head>
   <body>
 
+    <%= t.include("partials/_nav.html") %>
+
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
     <main class="quiz-body">
-      <% json.questions.forEach(function(q) { %>
+      <% json.questions.forEach(function(q, i) { %>
+        <h2>Question #<%= i + 1 %></h2>
         <%= t.include(`_${q.type}.html`, q) %>
       <% }) %>
     </main>
+
+    <%= t.include("partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
