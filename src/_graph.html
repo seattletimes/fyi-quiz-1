@@ -1,0 +1,24 @@
+<%
+var width = 640;
+var height = 320;
+%><div class="graph question">
+  <div class="question"><%= question %></div>
+  <div class="graph-container">
+    <svg class="graph"
+      data-x="<%= data.map(d => d.x).join(",") %>"
+      data-y="<%= data.map(d => d.y).join(",") %>"
+      data-halt="<%= data.length >> 1 %>"
+      width="<%= width %>"
+      height="<%= height %>"
+      preserveAspectRatio="none"
+    >
+    </svg>
+  </div>
+  <button class="compute" disabled="disabled">How'd I do?</button>
+  <div class="answer-text">
+    <div class="result"></div>
+    <div class="blurb">
+      <%= blurb %>
+    </div>
+  </div>
+</div>

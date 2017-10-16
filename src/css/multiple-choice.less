@@ -1,0 +1,65 @@
+.multiple-choice.question {
+
+  ul.options {
+    list-style-type: none;
+    .display-flex();
+    .flex-wrap(wrap);
+    margin: 0;
+    padding: 0;
+
+    li {
+      text-align: center;
+      padding: 4px 8px;
+      cursor: pointer;
+      .flex(0 0 50%);
+
+      &.icon-container {
+        .flex(0 0 25%);
+      }
+
+      &.chosen {
+        .text {
+          background: @st-light-red;
+          &::before {
+            content: "✘";
+            margin-right: 8px;
+          }
+        }
+
+        &[data-correct] {
+          .text {
+            background: @st-light-green;
+            &::before {
+              content: "✔";
+            }
+          }
+        }
+      }
+
+      .text {
+        transition: background .2s linear;
+        padding: 8px;
+        background: @df-off-white;
+      }
+
+      .icon {
+        transition: background .2s linear;
+        background: @df-off-white;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      &:hover, &:focus {
+        .text, .icon {
+          background: @df-light-gray;
+        }
+      }
+    }
+  }
+  
+  .answered& [data-correct] {
+    .text, .icon {
+      background: @st-light-green;
+    }
+  }
+}

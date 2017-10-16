@@ -1,0 +1,20 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "gymnastic-anise"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": ""
+    }
+  },
+  "title": "",
+  "description": "",
+  "url": "",
+  "image": "assets/social.jpg",
+  "sheets": ["1yjY-g0CD4sF_RF_gJqjXNUJAOEMPSV5T4_PQIHxRmHk"],
+  "standout": false,
+  "embedded": true,
+  "production": false
+}

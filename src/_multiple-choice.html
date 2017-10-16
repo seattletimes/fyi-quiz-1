@@ -1,0 +1,26 @@
+<div class="multiple-choice question">
+  <div class="question-text">
+    <% if (typeof image !== "undefined") { %>
+      <img src="./assets/social.jpg">
+    <% } %>
+    <%= question %>
+  </div>
+  <ul class="options">
+    <% options.forEach(function(a) { %>
+      <li
+        <% if (a.correct) { %>
+          data-correct
+        <% } %>
+      <% if (a.icon) { %>
+        class="icon-container">
+        <img class="icon" src="./assets/<%= a.icon %>" alt="<%= a.text %>">
+      <% } else { %>
+        class="text-container">
+        <div class="text"><%= a.text || a %></div>
+      <% } %>
+    <% }) %>
+  </ul>
+  <div class="answer-text">
+    <%= blurb %>
+  </div>
+</div>

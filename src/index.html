@@ -1,0 +1,42 @@
+<%
+
+json.questions.forEach(function(q) {
+  switch (q.type) {
+    case "multiple-choice":
+      q.options = [];
+      json.answers = json.answers.filter(function(a) {
+        if (a.question == q.id) {
+          q.options.push(a);
+          return false;
+        }
+        return true;
+      });
+      break;
+  
+    case "graph":
+      q.data = json[q.image];
+      break;
+  }
+});
+
+%><!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <main class="quiz-body">
+      <% json.questions.forEach(function(q) { %>
+        <%= t.include(`_${q.type}.html`, q) %>
+      <% }) %>
+    </main>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
