@@ -5,12 +5,13 @@
   margin: auto;
 
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .question {
     font-family: @df-sans;
     padding: 0 0 20px;
+    border-bottom: 1px solid @df-light-gray;
   }
 
   .answer-text {
@@ -38,6 +39,11 @@
   .answer-text {
     display: none;
   }
+}
+
+.comment-container {
+  max-width: 700px;
+  margin: auto;
 }
 
 @import "graph";

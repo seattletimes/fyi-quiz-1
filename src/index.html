@@ -38,6 +38,10 @@ json.questions.forEach(function(q) {
       <% }) %>
     </main>
 
+    <div class="comment-container">
+      <%= t.include("partials/_comments.html", { article: "designer-app-1508195456578" }) %>
+    </div>
+
     <%= t.include("partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
