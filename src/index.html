@@ -49,6 +49,8 @@ json.questions.forEach(function(q) {
         <h2>Q<%= i + 1 %>: <%= q.title %></h2>
         <%= t.include(`_${q.type}.html`, q) %>
       <% }) %>
+
+      <div class="score-block"></div>
     </main>
 
     <div class="comment-container">

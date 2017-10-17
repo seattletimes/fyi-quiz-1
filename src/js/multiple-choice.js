@@ -1,4 +1,5 @@
 var $ = require("./lib/qsa");
+var score = require("./score");
 
 $(".multiple-choice.question").forEach(function(container) {
 
@@ -10,9 +11,11 @@ $(".multiple-choice.question").forEach(function(container) {
     chosen = true;
     this.classList.add("chosen");
     container.classList.add("answered");
-    if (this.hasAttribute("data-correct")) {
+    var correct = this.hasAttribute("data-correct");
+    if (correct) {
       container.classList.add("correctly");
     }
+    score.increment(correct ? 10 : 0);
   };
 
   $(".options li", container).forEach(el => el.addEventListener("click", choose));

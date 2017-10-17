@@ -6,15 +6,15 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2017/fyi-quiz-newcomers"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "Who are Seattle's newcomers?",
+  "description": "We’re the fastest-growing big city in the country right now, and all those newly-arrived people are reshaping Seattle. But how much do you know about newcomers?",
+  "url": "https://projects.seattletimes.com/2017/fyi-quiz-newcomers",
   "image": "assets/social.jpg",
   "sheets": ["1yjY-g0CD4sF_RF_gJqjXNUJAOEMPSV5T4_PQIHxRmHk"],
   "standout": false,
-  "embedded": true,
+  "embedded": false,
   "production": false
 }

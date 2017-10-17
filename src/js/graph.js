@@ -3,6 +3,8 @@ var colors = require("./lib/colors");
 var savage = require("savage-query");
 var m = require("./lib/dom");
 
+var score = require("./score");
+
 var graphs = $(".graph.question");
 
 graphs.forEach(function(container) {
@@ -198,15 +200,17 @@ graphs.forEach(function(container) {
     var percent = (average * 100).toFixed(1);
 
     var result = $.one(".result", container);
-    if (average > .2) {
-      result.innerHTML = `Surprise! Your prediction was off by more than 20% on average.`;
-    } else if (average > .1) {
-      result.innerHTML = `Not bad: your answer was within ${percent}% of reality on average.`;
+    if (average > .1) {
+      result.innerHTML = `Surprise! Your prediction was off by more than 10% on average.`;
     } else if (average > .05) {
+      result.innerHTML = `Not bad: your answer was within ${percent}% of reality on average.`;
+    } else if (average > .02) {
       result.innerHTML = `Good job! On average, you were within ${percent}% of the actual values.`;
     } else {
       result.innerHTML = `Spooky: your predictions were within 5% of the actual value. Have you seen this graph before?`;
     }
+
+    score.increment(average < .05 ? 10 : average < .1 ? 5 : 0);
   });
 
   container.classList.add("ready");
