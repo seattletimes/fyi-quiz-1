@@ -42,6 +42,7 @@ graphs.forEach(function(container) {
   });
 
   var userValues = [];
+  userValues[cut - 1] = yValues[cut - 1];
   var user = savage.dom("polyline", {
     class: "user series",
     "stroke-width": max / 100
@@ -150,7 +151,7 @@ graphs.forEach(function(container) {
     var x = (e.clientX - bounds.left) / bounds.width;
     var y = (e.clientY - bounds.top) / bounds.height;
     var index = Math.round(x * (xValues.length - 1));
-    if (index < cut - 1) return;
+    if (index < cut) return;
     if (!touched) {
       touched = true;
       submit.disabled = false;

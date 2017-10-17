@@ -31,6 +31,19 @@ json.questions.forEach(function(q) {
 
     <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
+    <header class="intro">
+
+      <h3 class="tagline">The FYI Guy</h3>
+      <h1>Who are Seattle's newcomers?</h1>
+
+      <p class="chatter">
+        If you’re reading this in Seattle, there’s a good chance you lived somewhere else one year ago today. More than 60,000 city residents – nearly one in ten of us – moved here from outside King County within the past year.
+
+      <p class="chatter">
+        We’re the fastest-growing big city in the country right now, and all those newly-arrived people are reshaping Seattle.  But how much do you know about newcomers? Take our quiz and find out!
+
+    </header>
+
     <main class="quiz-body">
       <% json.questions.forEach(function(q, i) { %>
         <h2>Question #<%= i + 1 %></h2>
