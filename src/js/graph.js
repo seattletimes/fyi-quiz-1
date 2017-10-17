@@ -16,18 +16,23 @@ graphs.forEach(function(container) {
 
   var xValues = svg.getAttribute("data-x").split(",").map(Number);
   var yValues = svg.getAttribute("data-y").split(",").map(Number);
-  var max = Math.max.apply(null, yValues) * 1.1;
+  var max = Math.max.apply(null, yValues) * 1.2;
   var min = 0; //Math.max.apply(null, yValues) * .75;
   var width = svg.getAttribute("width") * 1;
   var height = svg.getAttribute("height") * 1;
   var viewHeight = max - min;
   var viewWidth = Math.round((max - min) / height * width);
   var xScale = x => (x / (xValues.length - 1)) * viewWidth;
-  var cut = xValues.length >> 1;
+  var cut = svg.getAttribute("data-halt");
+  if (!cut) {
+    cut = (xValues.length >> 1) - 1;
+  } else {
+    cut = xValues.indexOf(cut * 1);
+  }
 
   svg.setAttribute("viewBox", `0 ${-max} ${viewWidth} ${viewHeight}`);
 
-  var sliced = yValues.slice(0, cut);
+  var sliced = yValues.slice(0, cut + 1);
 
   var full = savage.dom("path", {
     class: "full series",
@@ -42,7 +47,7 @@ graphs.forEach(function(container) {
   });
 
   var userValues = [];
-  userValues[cut - 1] = yValues[cut - 1];
+  userValues[cut] = yValues[cut];
   var user = savage.dom("polyline", {
     class: "user series",
     "stroke-width": max / 100
@@ -59,7 +64,7 @@ graphs.forEach(function(container) {
   ]);
 
   for (var i = 0; i < xValues.length; i++) {
-    if (i == cut - 1) continue;
+    if (i == cut) continue;
     grid.appendChild(savage.dom("line", {
       x1: xScale(i),
       y1: -max,
@@ -109,37 +114,37 @@ graphs.forEach(function(container) {
   // cutline label
   svgContainer.appendChild(m("div", {
     class: "html-label under pad-left",
-    style: `left: ${(cut - 1) / (xValues.length - 1) * 100}%`
-  }, xValues[cut - 1] + ""));
+    style: `left: ${(cut) / (xValues.length - 1) * 100}%`
+  }, xValues[cut] + ""));
 
   // value at start 
   svgContainer.appendChild(m("div", {
     class: "html-label pad-left value",
-    style: `top: ${100 - yValues[cut - 1] / max * 100}%`
+    style: `top: ${100 - yValues[0] / max * 100}%`
   }, yValues[0].toLocaleString()));
 
   // value at cutline
   grid.appendChild(savage.dom("line", {
     class: "cutline",
-    x1: xScale(cut - 1),
+    x1: xScale(cut),
     y1: -max,
-    x2: xScale(cut - 1),
+    x2: xScale(cut),
     y2: 0,
     "vector-effect": "non-scaling-stroke"
   }));
-  var cutTop = 100 - yValues[cut - 1] / max * 100;
-  var cutLeft = (cut - 1) / (xValues.length - 1) * 100;
+  var cutTop = 100 - yValues[cut] / max * 100;
+  var cutLeft = (cut) / (xValues.length - 1) * 100;
   svgContainer.appendChild(m("div", {
     class: "html-label pad-left value",
     style: `top: ${cutTop}%; left: ${cutLeft}%;`
-  }, yValues[cut - 1].toLocaleString()));
+  }, yValues[cut].toLocaleString()));
 
   svg.appendChild(half);
   svg.appendChild(user);
   svg.appendChild(full);
   
   svg.appendChild(savage.dom("rect", {
-    x: xScale(cut - 1.5),
+    x: xScale(cut - .5),
     y: -max,
     width: "100%",
     height: max,
@@ -151,7 +156,7 @@ graphs.forEach(function(container) {
     var x = (e.clientX - bounds.left) / bounds.width;
     var y = (e.clientY - bounds.top) / bounds.height;
     var index = Math.round(x * (xValues.length - 1));
-    if (index < cut) return;
+    if (index < cut + 1) return;
     if (!touched) {
       touched = true;
       submit.disabled = false;

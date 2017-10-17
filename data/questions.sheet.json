@@ -2,30 +2,35 @@
   {
     "id": 0,
     "type": "graph",
+    "title": "Seattle's population",
     "question": "Complete the line in this graph of Seattle's population since 1990.",
-    "image": "population",
+    "image": "population_long",
+    "afterimage": 1980,
     "source": "U.S. Census",
     "blurb": "Seattle passed the 700,000 population mark in 2016, meaning we've added more than 90,000 residents since the start of the decade. The only major U.S. with a faster rate of growth in that period is Austin, Texas. But in 2016, Seattle held the top spot, growing by 3.1% (an increase of 21,000 people) in a single year.  "
   },
   {
     "id": 1,
     "type": "multiple-choice",
+    "title": "Out-of-staters",
     "question": "Pick which slice of the pie represents King County residents who were born in Washington.",
     "image": "quiz-born-pie.jpg",
     "afterimage": "quiz-born-pie-text.jpg",
     "source": "U.S. Census",
-    "blurb": "The number of King County residents who were born in Washington still exceeds the number born in another state -- but it's getting closer and closer. Since the start of the decade, out-of-staters, and folks from foreign countries, have been growing at a much faster rate the native-born Washingtonians. "
+    "blurb": "The number of King County residents who were born in Washington still exceeds the number born in another state — but it's getting closer and closer. Since the start of the decade, out-of-staters, and folks from foreign countries, have been growing at a much faster rate the native-born Washingtonians. "
   },
   {
     "id": 2,
     "type": "multiple-choice",
+    "title": "Where we come from",
     "question": "After California, which state sent the most new residents to King County last year?",
     "source": "Washington Department of Licensing",
-    "blurb": "Texas is the correct answer. The Long Star State sent King County 4,727 new residents in 2016, according to drivers license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending new residents here. But in 2011, Texas surged into the No. 2 spot, and has remained there since. California is still way out in front -- King County picked up 16,155 from the Golden State last year."
+    "blurb": "Texas is the correct answer. The Long Star State sent King County 4,727 new residents in 2016, according to drivers license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending new residents here. But in 2011, Texas surged into the No. 2 spot, and has remained there since. California is still way out in front — King County picked up 16,155 from the Golden State last year."
   },
   {
     "id": 3,
     "type": "multiple-choice",
+    "title": "Where we don't",
     "question": "Which state sent the fewest new residents to King County last year?",
     "source": "Washington Department of Licensing",
     "blurb": "West Virginia expats are the loneliest in King County, with just 76 new arrivals in 2016. More folks moved here last year from Finland (123), Quebec (93) and France (88) than from the Mountain State. "
@@ -33,9 +38,10 @@
   {
     "id": 4,
     "type": "graph",
+    "title": "Millennial boom",
     "question": "Complete the line in this graph of people age 25-34 who move to Seattle from outside Washington each year.",
     "image": "youths",
     "source": "U.S. Census",
-    "blurb": "Last year, Seattle added a record 19,000 new residents between the ages of 25 and 34. About 160,000 Seattleites are in this age group -- nearly one in four city residents. "
+    "blurb": "Last year, Seattle added a record 19,000 new residents between the ages of 25 and 34. About 160,000 Seattleites are in this age group — nearly one in four city residents. "
   }
 ]

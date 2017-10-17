@@ -7,7 +7,7 @@ var height = 320;
     <svg class="graph"
       data-x="<%= data.map(d => d.x).join(",") %>"
       data-y="<%= data.map(d => d.y).join(",") %>"
-      data-halt="<%= data.length >> 1 %>"
+      data-halt="<%= typeof afterimage == "undefined" ? "" : afterimage %>"
       width="<%= width %>"
       height="<%= height %>"
       preserveAspectRatio="none"

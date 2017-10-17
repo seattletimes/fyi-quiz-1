@@ -46,7 +46,7 @@ json.questions.forEach(function(q) {
 
     <main class="quiz-body">
       <% json.questions.forEach(function(q, i) { %>
-        <h2>Question #<%= i + 1 %></h2>
+        <h2>Q<%= i + 1 %>: <%= q.title %></h2>
         <%= t.include(`_${q.type}.html`, q) %>
       <% }) %>
     </main>
