@@ -11,10 +11,10 @@
   },
   "title": "Who are Seattle's newest residents?",
   "description": "How well do you know Seattle’s newcomers? Take our quiz to find out.",
-  "url": "https://projects.seattletimes.com/2017/fyi-quiz-newcomers",
+  "url": "https://projects.seattletimes.com/2017/fyi-quiz-newcomers/",
   "image": "assets/social_cityscape.jpg",
   "sheets": ["1yjY-g0CD4sF_RF_gJqjXNUJAOEMPSV5T4_PQIHxRmHk"],
   "standout": false,
   "embedded": false,
-  "production": false
+  "production": true
 }
