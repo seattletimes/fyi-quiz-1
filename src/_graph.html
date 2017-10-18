@@ -20,5 +20,10 @@ var height = 320;
     <div class="blurb">
       <%= blurb %>
     </div>
+    <% if (typeof url != "undefined") { %>
+    <div class="read-more">
+      Read more: <a href="<%= url %>"><%= link_text %></a>
+    </div>
+    <% } %>
   </div>
 </div>
