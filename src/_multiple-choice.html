@@ -24,6 +24,12 @@
     <% }) %>
   </ul>
   <div class="answer-text">
+    <div class="result"></div>
     <%= blurb %>
+    <% if (typeof url != "undefined") { %>
+    <div class="read-more">
+      Read more: <a href="<%= url %>"><%= link_text %></a>
+    </div>
+    <% } %>
   </div>
 </div>

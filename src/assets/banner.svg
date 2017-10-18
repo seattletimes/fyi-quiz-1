@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 1202.91 322.83"
+   id="svg3124"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   width="100%"
+   height="100%"
+   sodipodi:docname="happynewyear.svg">
+  <metadata
+     id="metadata3261">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1724"
+     inkscape:window-height="937"
+     id="namedview3259"
+     showgrid="false"
+     inkscape:zoom="2.1397018"
+     inkscape:cx="577.84667"
+     inkscape:cy="221.80003"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3124" />
+  <defs
+     id="defs3126">
+    <style
+       id="style3128">
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #f15841;
+      }
+
+      .cls-1 {
+        stroke-width: 3.68px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #00aeef;
+      }
+
+      .cls-2 {
+        stroke-width: 4.63px;
+      }
+
+      .cls-3 {
+        stroke-width: 4.48px;
+      }
+
+      .cls-4 {
+        stroke-width: 4.63px;
+      }
+
+      .cls-5 {
+        stroke: #97c93d;
+        stroke-width: 3.33px;
+      }
+    </style>
+  </defs>
+  <title
+     id="title3130">happynewyear</title>
+  <g
+     id="Firework_6"
+     data-name="Firework 6">
+    <path
+       class="cls-4"
+       d="M338.64,28S67.65-1.83,31.07,61.73C19.24,82.29,24.57,95.66,33.14,103c17.5,15,46.68,1.48,39.13-26.36"
+       transform="translate(-7.62 11.5)"
+       id="path3220" />
+    <path
+       class="cls-4"
+       d="M854.14,28s271-29.83,307.57,33.73c11.83,20.56,6.5,33.92-2.07,41.27-17.5,15-46.68,1.48-39.13-26.36"
+       transform="translate(-7.62 11.5)"
+       id="path3222" />
+  </g>
+  <g
+     id="Firework_5"
+     data-name="Firework 5">
+    <path
+       class="cls-4"
+       d="M450.54,44.83S341.73,18.19,328.75,60.91c-7,23,16.75,27.89,16.75,27.89s23.61-2.53,15.9-20.5"
+       transform="translate(-7.62 11.5)"
+       id="path3227" />
+    <path
+       class="cls-4"
+       d="M742.24,44.83S851.05,18.19,864,60.91c7,23-16.75,27.89-16.75,27.89s-23.61-2.53-15.9-20.5"
+       transform="translate(-7.62 11.5)"
+       id="path3225" />
+  </g>
+  <g
+     id="Firework_4">
+    <path
+       class="cls-4"
+       d="M540.16,68s-49.89-28.36-70-14.31c-10.84,7.57.34,15.59,0.34,15.59s13.39,5,14.82-4.28"
+       transform="translate(-7.62 11.5)"
+       id="path3230" />
+    <path
+       class="cls-4"
+       d="M652.61,68s49.89-28.36,70-14.31c10.84,7.57-.34,15.59-0.34,15.59s-13.39,5-14.82-4.28"
+       transform="translate(-7.62 11.5)"
+       id="path3232" />
+  </g>
+  <g
+     id="Firework_3"
+     data-name="Firework 3">
+    <path
+       class="cls-4"
+       d="M553.59,142.43a54.76,54.76,0,1,1,89.67-1.63"
+       transform="translate(-7.62 11.5)"
+       id="path3235" />
+  </g>
+  <g
+     id="Firework_2"
+     data-name="Firework 2">
+    <path
+       class="cls-4"
+       d="M567.46,124.41a33.55,33.55,0,1,1,61.31-1.16"
+       transform="translate(-7.62 11.5)"
+       id="path3238" />
+  </g>
+  <g
+     id="Firework_1"
+     data-name="Firework 1">
+    <path
+       class="cls-4"
+       d="M585.88,117.85a14.21,14.21,0,1,1,24.42-.79"
+       transform="translate(-7.62 11.5)"
+       id="path3241" />
+  </g>
+  <g
+     id="Skyline">
+    <path
+       class="cls-5"
+       d="m 9.28,181.71 25.12,0 0,81.46 23.6,0 0,-54 40.47,0 0,67.08 64.08,0 c 0,0 -2.91,-13.11 0,-13.11 l 77.45,0 0,24.79 161,0 0,-18.93 125.64,0 0,11.62 7.52,0 1.48,29.05 42.86,0 13.25,-58.48 -17.1,-46.66 -6.65,0 -10.5,-19.22 -10.22,0 35.09,-17 -7,-13.25 46,0 -6,13.25 37,17 -12,0 -6.37,19.22 6.37,-19.22 -93.09,0 35.09,-17 -7,-13.25 24,0 0,0 22,0 -6,13.25 37,17 -12,0 -6.37,19.22 -8,0 -16.5,46.87 20.93884,52.20439 C 746.98035,277.21952 871.77795,280.18184 975.44413,282 1122.4441,285 1155,290 1155,290 l 0,-26 25.64,0 0,-45 0,0 0.9347,87.52929 C 828.528,301.49725 650.51632,309.52985 602.14,309.66 l -3.93471,-188.78652"
+       transform="translate(-7.62,11.5)"
+       id="path3244"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#97c93d;stroke-width:3.32999992px;stroke-linecap:round;stroke-linejoin:round"
+       sodipodi:nodetypes="ccccccccscccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

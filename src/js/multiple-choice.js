@@ -15,6 +15,7 @@ $(".multiple-choice.question").forEach(function(container) {
     if (correct) {
       container.classList.add("correctly");
     }
+    $.one(".result", container).innerHTML = `<b>${correct ? 10 : 0} points</b>`;
     score.increment(correct ? 10 : 0);
   };
 

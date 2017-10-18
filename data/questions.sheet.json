@@ -2,46 +2,54 @@
   {
     "id": 0,
     "type": "graph",
-    "title": "Seattle's population",
-    "question": "Complete the line in this graph of Seattle's population since 1990.",
+    "title": "Draw the line: Population growth",
+    "question": "Hard to believe Seattle was once losing population — but it was, during the Boeing Bust era of the 1970s. Since then, it's been nearly all growth. Complete the line in this graph of Seattle's population since 1980.",
     "image": "population_long",
     "afterimage": 1980,
     "source": "U.S. Census",
-    "blurb": "Seattle passed the 700,000 population mark in 2016, meaning we've added more than 90,000 residents since the start of the decade. The only major U.S. with a faster rate of growth in that period is Austin, Texas. But in 2016, Seattle held the top spot, growing by 3.1% (an increase of 21,000 people) in a single year.  "
+    "blurb": "Seattle passed the 700,000 population mark in 2016, meaning we've added more than 90,000 residents since the start of the decade. The only major U.S. city with a faster rate of growth in that period is Austin, Texas. But in 2016, Seattle held the top spot, growing by 3.1 percent (an increase of 21,000 people) in a single year.  ",
+    "link_text": "Seattle once again nation’s fastest-growing big city; population exceeds 700,000",
+    "url": "https://www.seattletimes.com/seattle-news/data/seattle-once-again-nations-fastest-growing-big-city-population-exceeds-700000/"
   },
   {
     "id": 1,
     "type": "multiple-choice",
     "title": "Out-of-staters",
-    "question": "Pick which slice of the pie represents King County residents who were born in Washington.",
+    "question": "This pie represents King County's 2.15 million people, and as you can see, no one group holds a majority: Native-born Washingtonians, people born out of state or the foreign-born. Can you pick which slice of the pie represents out-of-staters?",
     "image": "quiz-born-pie.jpg",
     "afterimage": "quiz-born-pie-text.jpg",
     "source": "U.S. Census",
-    "blurb": "The number of King County residents who were born in Washington still exceeds the number born in another state — but it's getting closer and closer. Since the start of the decade, out-of-staters, and folks from foreign countries, have been growing at a much faster rate the native-born Washingtonians. "
+    "blurb": "King County residents who were born in Washington still make up the largest group, but their percentage has been shrinking. The county's foreign-born population is growing the fastest, having increased by nearly 100,000 people since 2010.",
+    "link_text": "Newcomers pour into King County; Washingtonians quietly exit",
+    "url": "https://www.seattletimes.com/seattle-news/data/newcomers-pour-into-king-county-while-washingtonians-quietly-exit/"
   },
   {
     "id": 2,
     "type": "multiple-choice",
     "title": "Where we come from",
-    "question": "After California, which state sent the most new residents to King County last year?",
+    "question": "Everybody knows Californians have been flooding into the Seattle area for decades. But after California, which state sent the most new residents to King County last year?",
     "source": "Washington Department of Licensing",
-    "blurb": "Texas is the correct answer. The Long Star State sent King County 4,727 new residents in 2016, according to drivers license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending new residents here. But in 2011, Texas surged into the No. 2 spot, and has remained there since. California is still way out in front — King County picked up 16,155 from the Golden State last year."
+    "blurb": "Texas is the correct answer. The Long Star State sent King County 4,727 new residents in 2016, according to drivers license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending us new neighbors. But in 2011, Texas surged into the No. 2 spot, and has remained there since. California is still way out in front — King County picked up 16,155 folks from the Golden State last year."
   },
   {
     "id": 3,
     "type": "multiple-choice",
     "title": "Where we don't",
-    "question": "Which state sent the fewest new residents to King County last year?",
+    "question": "Not everybody's moving to Seattle — even if it seems like it sometimes! Which state sent the fewest new residents to King County last year?",
     "source": "Washington Department of Licensing",
-    "blurb": "West Virginia expats are the loneliest in King County, with just 76 new arrivals in 2016. More folks moved here last year from Finland (123), Quebec (93) and France (88) than from the Mountain State. "
+    "blurb": "West Virginia expats are the loneliest in King County, with just 76 new arrivals in 2016. More folks moved here last year from Finland (123), Quebec (93) and France (88) than from the Mountain State. ",
+    "link_text": "Newcomers arriving in record numbers, but from where?",
+    "url": "https://www.seattletimes.com/seattle-news/data/newcomers-arriving-in-record-numbers-but-from-where/"
   },
   {
     "id": 4,
     "type": "graph",
-    "title": "Millennial boom",
-    "question": "Complete the line in this graph of people age 25-34 who move to Seattle from outside Washington each year.",
+    "title": "Draw the line: Millennial boom",
+    "question": "Our rents may be sky high, but that hasn't stopped young people from flocking to Seattle from around the country. Complete the line in this graph of people age 25-34 who move to Seattle from outside Washington each year.",
     "image": "youths",
     "source": "U.S. Census",
-    "blurb": "Last year, Seattle added a record 19,000 new residents between the ages of 25 and 34. About 160,000 Seattleites are in this age group — nearly one in four city residents. "
+    "blurb": "Last year, a record 19,000 people between the ages of 25 and 34 moved to Seattle from outside Washington. There are about 160,000 Seattleites in this age group — nearly one in four city residents. ",
+    "link_text": "Seattle’s newcomers vs. longtime residents: At least we both like the Seahawks",
+    "url": "https://www.seattletimes.com/seattle-news/data/seattles-newcomers-vs-longtime-residents-at-least-we-both-like-the-seahawks/"
   }
 ]

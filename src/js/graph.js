@@ -19,7 +19,7 @@ graphs.forEach(function(container) {
   var xValues = svg.getAttribute("data-x").split(",").map(Number);
   var yValues = svg.getAttribute("data-y").split(",").map(Number);
   var max = Math.max.apply(null, yValues) * 1.2;
-  var min = 0; //Math.max.apply(null, yValues) * .75;
+  var min = 0;
   var width = svg.getAttribute("width") * 1;
   var height = svg.getAttribute("height") * 1;
   var viewHeight = max - min;
@@ -200,17 +200,19 @@ graphs.forEach(function(container) {
     var percent = (average * 100).toFixed(1);
 
     var result = $.one(".result", container);
+    var points = 0;
     if (average > .1) {
-      result.innerHTML = `Surprise! Your prediction was off by more than 10% on average.`;
+      result.innerHTML = `<b>0 points</b>Your prediction was off by more than 10% on average`;
     } else if (average > .05) {
-      result.innerHTML = `Not bad: your answer was within ${percent}% of reality on average.`;
-    } else if (average > .02) {
-      result.innerHTML = `Good job! On average, you were within ${percent}% of the actual values.`;
+      result.innerHTML = `<b>5 points</b>Your answer was within ${percent}% of reality on average`;
+      points = 5;
     } else {
-      result.innerHTML = `Spooky: your predictions were within 5% of the actual value. Have you seen this graph before?`;
+      result.innerHTML = `<b>10 points</b>Your predictions were within 5% of the actual value`;
+      points = 10;
     }
+    if (points) container.classList.add("correctly");
 
-    score.increment(average < .05 ? 10 : average < .1 ? 5 : 0);
+    score.increment(10);
   });
 
   container.classList.add("ready");

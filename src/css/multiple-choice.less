@@ -32,15 +32,23 @@
       text-align: center;
       padding: 4px 8px;
       cursor: pointer;
-      .flex(0 0 50%);
+      .flex(1 1 0%);
+
+      @media @mobile {
+        .flex(0 0 100%);
+      }
 
       &.icon-container {
         .flex(0 0 25%);
+
+        @media @mobile {
+          .flex(0 0 50%);
+        }
       }
 
       &.chosen {
         .text {
-          background: @st-light-red;
+          background: @incorrect-light;
           &::before {
             content: "✘";
             margin-right: 8px;
@@ -48,19 +56,19 @@
         }
 
         .icon {
-          background: @st-light-red;
+          background: @incorrect-light;
         }
 
         &[data-correct] {
           .text {
-            background: @st-light-green;
+            background: @correct-light;
             &::before {
               content: "✔";
             }
           }
 
           .icon {
-            background: @st-light-green;
+            background: @correct-light;
           }
         }
       }
@@ -88,7 +96,7 @@
 
   .answered& [data-correct] {
     .text, .icon {
-      background: @st-light-green;
+      background: @correct-light;
     }
   }
 }
