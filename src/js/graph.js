@@ -212,7 +212,7 @@ graphs.forEach(function(container) {
     }
     if (points) container.classList.add("correctly");
 
-    score.increment(10);
+    score.increment(points);
   });
 
   container.classList.add("ready");
