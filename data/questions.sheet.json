@@ -15,7 +15,7 @@
     "id": 1,
     "type": "multiple-choice",
     "title": "Out-of-staters",
-    "question": "This pie represents King County's 2.15 million people, and as you can see, no one group holds a majority: Native-born Washingtonians, people born out of state or the foreign-born. Can you pick which slice of the pie represents out-of-staters?",
+    "question": "This pie represents King County's 2.15 million people, and as you can see, no one group holds a majority: native-born Washingtonians, those born in another U.S. state or the foreign-born. Can you pick which slice of the pie represents out-of-staters?",
     "image": "quiz-born-pie.jpg",
     "afterimage": "quiz-born-pie-text.jpg",
     "source": "U.S. Census",
@@ -29,7 +29,7 @@
     "title": "Where we come from",
     "question": "Everybody knows Californians have been flooding into the Seattle area for decades. But after California, which state sent the most new residents to King County last year?",
     "source": "Washington Department of Licensing",
-    "blurb": "Texas is the correct answer. The Long Star State sent King County 4,727 new residents in 2016, according to drivers license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending us new neighbors. But in 2011, Texas surged into the No. 2 spot, and has remained there since. California is still way out in front — King County picked up 16,155 folks from the Golden State last year."
+    "blurb": "Texas is the correct answer. The Lone Star State sent King County 4,727 new residents in 2016, according to driver's license records from the Department of Licensing. But if you picked Oregon, good guess! For many years, Oregon was behind California for sending us new neighbors. But in 2011, Texas surged into the No. 2 spot and has remained there since. California is still way out in front: King County picked up 16,155 folks from the Golden State last year."
   },
   {
     "id": 3,
